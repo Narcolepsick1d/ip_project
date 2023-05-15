@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== CSS ===== -->
+
+    <link rel="stylesheet" href="assets/css/secondhome.css" />
+
+    <title>REAL ESTATE</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="header">
+      <nav class="navbar nav-l">
+        <section class="flex">
+          <a href="user.html" class="logo"><i class="fas fa-house"></i>BOLD</a>
+          
+        </section>
+      </nav>
+      <nav class="navbar nav-2">
+        <section class="flex">
+          <div id="menu-btn" class="bx bx-menu"></div>
+          <div class="menu">
+            <ul>
+           
+
+              <li><a href="home.html">BACK HOME</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="#">SAVED PROPERTIES</a></li>
+          </ul>
+        </section>
+      </nav>
+      <script src="assets/js/secondhome.js"></script>
+    </header>
+
+  
+      
+    <!-- CSS FOR THE FORM BECAUSE I DIDNT WANT TO HAVE A SEPERATE .CSS FILE FOR THIS SO ITS JUST IN THE HTML -->
+        <style>
+       
+          form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+          }
+          h1{
+            text-align: center;
+          }
+      
+          input[type="text"],
+          input[type="number"],
+          select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid darkgrey;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+          }
+          select {
+            background-color: white;
+          }
+          textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid white;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            height: 200px;
+          }
+          button {
+            background-color: grey;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+          }
+          button:hover {
+            background-color: black;
+          }
+    
+        </style>
+      
+        <form>
+            <h1>REGISTER TO SELL PROPERTY</h1>
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+          
+          />
+          <label for="price">Price:</label>
+          <input
+            type="number"
+            id="price"
+            name="price"
+            
+          />
+          <label for="bedrooms">Bedrooms:</label>
+          <select id="bedrooms" name="bedrooms" required>
+            <option value="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        
+          </select>
+          <label for="bathrooms">Bathrooms:</label>
+          <select id="bathrooms" name="bathrooms" required>
+            <option value="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+       
+       
+          </select>
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            name="description"
+           
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        
+        </div>
+      </body>
+    </html>
+
+    <footer class="footer">
+        <section class="flex">
+          <div class="box">
+            <a href="#">bold@boldestate.com</a>
+            <a href="#"><span>Tashkent, Uzbekistan.</span></a>
+          </div>
+          <div class="box">
+            <a href="home.html">HOME</a>
+            <a href="login.html">LOGIN</a>
+          </div>
+          <div class="box">
+            <a href="facebook.com"
+              ><span><i class="bx bxl-facebook"></i></span
+            ></a>
+            <a href="twitter.com"
+              ><span><i class="bx bxl-twitter"></i></span
+            ></a>
+          </div>
+        </section>
+        <div class="credit">
+          Copyright <span>IUT Junior Students</span> All Rights Reserved.
+        </div>
+      </footer>
+  </body>
+</html>

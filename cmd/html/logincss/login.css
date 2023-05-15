@@ -1,0 +1,89 @@
+/* IMPORTING GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: white;
+}
+
+/* WRAPPER TO HOLD VISUAL CONTENTS IN ONE PAGE */
+.wrapper {
+  width: 330px;
+  padding: 2rem 1rem;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 20px 35px black;
+}
+
+h1 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1.2rem;
+}
+form input {
+  width: 92%;
+  outline: none;
+  border: 1px solid white;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background: white;
+}
+button {
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 50%;
+  color: white;
+  cursor: pointer;
+  background: grey;
+}
+button:hover {
+  background: black;
+}
+input:focus {
+  border: 1px solid grey;
+}
+
+.terms input {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.terms label {
+  font-size: 0.8rem;
+}
+.terms a {
+  color: rgb(90, 63, 63);
+ 
+}
+.member {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: grey;
+}
+.member a {
+  color: black;
+
+}
+.recover {
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0.5rem 1.5rem 0 0;
+}
+.recover a {
+
+  color: black;
+}

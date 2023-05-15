@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== CSS ===== -->
+
+    <link rel="stylesheet" href="assets/css/secondhome.css" />
+  </head>
+  <body>
+    <!--===== HEADER ====-->
+    <header class="header">
+      <nav class="navbar nav-l">
+        <section class="flex">
+          <a href="user.html" class="logo">BOLD</a>
+          <ul>
+            <li>
+              <a href="ownerhome.html">SELL PROPERTY</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <nav class="navbar nav-2">
+        <section class="flex">
+          <div id="menu-btn" class="bx bx-menu"></div>
+          <div class="menu">
+            <ul>
+               <li>
+                <a href="ownerhome.html">SELL</a>
+                <ul>
+                  <li><a href="ownerhome.html">SELL PROPERTY</a></li>
+                </ul>
+               </li>
+              
+
+              
+              <li><a href="home.html">HOME PAGE</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="#">SAVED PROPERTIES</a></li>
+          </ul>
+        </section>
+      </nav>
+      <script src="assets/js/secondhome.js"></script>
+    </header>
+    <style>
+        body {
+         font-family: "Poppins", sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f2f2f2;
+        }
+        .container {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 30px;
+        }
+        .property {
+         background-color: white;
+         border-radius: 5px;
+         box-shadow: 0 4px 8px 0 black;
+         margin-bottom: 20px;
+         padding: 20px;
+         position: relative;
+        }
+        .property .img-container {
+         max-width: 300px;
+         height: 100px;
+         margin-right: 10px;
+         float: left;
+        }
+        .property .img-container img {
+         max-width: 90%;
+         height: 90%;
+         object-fit: cover;
+        }
+        .property .title {
+         font-size: 20px;
+         margin: 0;
+         margin-bottom: 10px;
+        }
+        .property .location {
+         font-size: 14px;
+         margin: 0;
+         margin-bottom: 5px;
+         color: grey;
+        }
+        .property .btn-group {
+         position: absolute;
+         top: 10px;
+         right: 10px;
+        }
+        .property .btn {
+         background-color: black;
+         border: none;
+         color: white;
+         padding: 10px;
+         cursor: pointer;
+         border-radius: 5px;
+         margin-right: 10px;
+        }
+        .property .btn:hover {
+         background-color: grey;
+        }
+       </style>
+      </head>
+      <body>
+       <div class="container">
+        <div class="property">
+         <div class="img-container">
+          <img src="assets/images/home1.jpg" alt="Property image">
+         </div>
+         <div class="info">
+          <h2 class="title">PROPERTY 1</h2>
+          <p class="location">ZIYOLILAR 9, TASHKENT, UZBEKISTAN</p>
+          <p class="price">$100,000</p>
+          <div class="btn-group">
+           <button class="btn">View</button>
+           <button class="btn">Save</button>
+          </div>
+         </div>
+        </div>
+        <div class="property">
+         <div class="img-container">
+          <img src="assets/images/home1.jpg" alt="Property image">
+         </div>
+         <div class="info">
+          <h2 class="title">PROPERTY 2</h2>
+          <p class="location">ZIYOLILAR 9, TASHKENT, UZBEKISTAN</p>
+          <p class="price">$200,000</p>
+          <div class="btn-group">
+           <button class="btn">View</button>
+           <button class="btn">Save</button>
+          </div>
+         </div>
+        </div>
+        <div class="property">
+         <div class="img-container">
+          <img src="assets/images/home1.jpg" alt="Property image">
+         </div>
+         <div class="info">
+          <h2 class="title">PROPERTY 3</h2>
+          <p class="location">ZIYOLILAR 9, TASHKENT, UZBEKISTAN</p>
+          <p class="price">$300,000</p>
+          <div class="btn-group">
+           <button class="btn">View</button>
+           <button class="btn">Save</button>
+          </div>
+         </div>
+        </div>
+       </div>
+      </body>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <section class="flex">
+        <div class="box">
+          <a href="#">bold@boldestate.com</a>
+          <a href="#"><span>Tashkent, Uzbekistan.</span></a>
+        </div>
+        <div class="box">
+          <a href="home.html">HOME</a>
+          <a href="login.html">LOGIN</a>
+        </div>
+        <div class="box">
+          <a href="facebook.com"
+            ><span><i class="bx bxl-facebook"></i></span
+          ></a>
+          <a href="twitter.com"
+            ><span><i class="bx bxl-twitter"></i></span
+          ></a>
+        </div>
+      </section>
+      <div class="credit">
+        Copyright <span>IUT Junior Students</span> All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>

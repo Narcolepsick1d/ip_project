@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* DOING THIS SO I DONT HAVE TO CONSTANTLY TYPE IT DOWN */
+:root {
+  --border: 0.1rem solid var (var(--light-color));
+  --box-shadow: 0 0.5rem 0.1rem black;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+body {
+  background-color: grey;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 0.1rem black;
+}
+.header .navbar.nav-1 .flex {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.header .navbar.nav-2 .flex {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header .navbar.nav-l {
+  background-color: black;
+}
+
+.header .navbar.nav-2 {
+  background-color: white;
+}
+.header .navbar .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar .flex .logo {
+  font-size: 2.2rem;
+  color: white;
+}
+.header .navbar .flex .logo i {
+  color: grey;
+  margin-right: 1rem;
+}
+.header .navbar .flex ul {
+  list-style: none;
+}
+.header .navbar .flex ul li {
+  float: left;
+  position: relative;
+}
+.header .navbar .flex ul li a {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+
+  font-size: 1.8rem;
+  color: black;
+  background-color: white;
+}
+.header .navbar .flex ul li a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.header .navbar .flex ul li a i {
+  margin-left: 1rem;
+}
+.header .navbar .flex ul li ul {
+  position: absolute;
+  width: 17rem;
+  left: 0;
+}
+.header .navbar .flex ul li ul li {
+  width: 100%;
+}
+
+.header .navbar .flex ul li ul li a {
+  display: none;
+}
+.header .navbar .flex ul li:hover ul li a {
+  display: block;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: black;
+  display: none;
+  cursor: pointer;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.property {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.property .img-container {
+  max-width: 200px;
+  height: 120px;
+  margin-right: 20px;
+  float: left;
+}
+
+.property .img-container img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property .title {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.property .location {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #999;
+}
+
+.property .btn-group {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.property .btn {
+  background-color: black;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.property .btn:hover {
+  background-color: grey;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: grey;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ccc;
+  color: white;
+}
+agent-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+agent-h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+ul-agent {
+  list-style: none;
+  padding: 0;
+  margin: 40px auto;
+  max-width: 800px;
+}
+li-agent {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+img-agent {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+agent-h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+agent-p {
+  margin: 0;
+}
+agent-button {
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+agent-button:hover {
+  background-color: black;
+}
+
+.agent-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.agent-info {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.agent-info h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.agent-info p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.agent-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.agent-info li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.hire-agent {
+  flex: 1;
+}
+
+.hire-agent h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hire-agent p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.hire-agent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hire-agent label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hire-agent input,
+.hire-agent textarea {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hire-agent button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hire-agent button:hover {
+  background-color: grey;
+}
+
+.hire-agent ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hire-agent li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+.footer {
+  background-color: black;
+}
+.footer .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer .flex .box {
+  flex: 1 1 30rem;
+}
+.footer .flex .box a {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+}
+.footer .flex .box a span {
+  color: white;
+}
+.footer .flex .box a:hover span .footer .flex .box a i {
+  color: grey;
+}
+
+.footer .flex .box:last-child {
+  text-align: right;
+}
+.footer .flex .box:last-child a i {
+  margin-left: 1.5rem;
+}
+.footer .flex .box:first-child a i {
+  margin-right: 1.5rem;
+}
+.footer .flex .box:nth-child(2) {
+  text-align: center;
+}
+
+.footer .credit {
+  padding: 3rem 2 rem;
+  text-align: center;
+
+  border-top: var(--border);
+  font-size: 2rem;
+  color: white;
+  margin-top: 2rem;
+}
+.footer .credit .span {
+  color: var(--main-color);
+}
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar .menu {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: var(--border);
+    transition: 0.2s linear;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar .menu.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar .menu ul li {
+    width: 100%;
+    position: relative;
+  }
+  .header .navbar .menu ul li a {
+    width: 100%;
+  }
+
+  .header .navbar .menu ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  .header .navbar .menu ul li ul li a {
+    padding-left: 4rem;
+    background-color: black;
+    color: white;
+  }
+  .agent-section {
+    flex-direction: column;
+  }
+
+  .agent-info {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .hire-agent {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .header .navbar .flex .logo {
+    font-size: 1.8rem;
+  }
+}

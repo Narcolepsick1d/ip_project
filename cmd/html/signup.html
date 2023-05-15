@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="logincss/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Sign Up</h1>
+      <form id="signup-form" action="#">
+        <input type="text" placeholder="Name" id="name-input" />
+        <input type="text" placeholder="Email" id="email-input" />
+        <input type="password" placeholder="Password" id="password-input" />
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          id="password-repeat-input"
+        />
+      </form>
+      <div class="terms">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox"
+          >I agree to the <a href="#">Terms and Conditions</a>
+        </label>
+      </div>
+      <button id="signup-button">Sign Up</button>
+      <div class="member">
+        Do you have an account?<a href="signuphome.html">Login</a>
+      </div>
+      <div class="member">
+        Log in after Sign Up here <a href="signuphome.html">Signup</a>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("signup-button").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        var name = document.getElementById("name-input").value;
+        var email = document.getElementById("email-input").value;
+        var password = document.getElementById("password-input").value;
+
+        var data = {
+          name: name,
+          email: email,
+          password: password,
+        };
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://localhost:8000/auth/sign-up", true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Обработка успешного ответа
+            console.log("Data sent successfully");
+          } else {
+            // Обработка ошибки
+            console.error("Failed to send data");
+          }
+        };
+
+        xhr.send(JSON.stringify(data));
+      });
+    </script>
+  </body>
+</html>
